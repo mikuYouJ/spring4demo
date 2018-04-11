@@ -1,5 +1,6 @@
 package com.sunmoongz.srping4.service;
 
+import com.sunmoongz.aop.Action;
 import org.springframework.stereotype.Service;
 
 /**
@@ -7,6 +8,6 @@ import org.springframework.stereotype.Service;
  */
 
 public interface UseFunctionService {
-
+    @Action(name ="say hello")
     public String sayHello(String word);
 }

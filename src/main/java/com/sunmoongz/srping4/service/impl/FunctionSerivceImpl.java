@@ -1,5 +1,6 @@
 package com.sunmoongz.srping4.service.impl;
 
+import com.sunmoongz.aop.Action;
 import com.sunmoongz.srping4.service.FunctionService;
 import org.springframework.stereotype.Service;
 
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
  */
 @Service("FunctionService")
 public class FunctionSerivceImpl implements FunctionService {
+
     public String sayHello(String word) {
         return "hello !" + word ;
     }
